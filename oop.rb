@@ -1,3 +1,5 @@
+require "pry"
+
 # Question 6
 # Define a Ruby class called `Animal`. Each `Animal` should have...
 # - A `name` (String) attribute
@@ -10,6 +12,7 @@ class Animal
     @name = name
   end
   def greet ()
+    puts "Hi, my name is #{@name}"
   end
 end
 
@@ -43,3 +46,5 @@ end
 # Create a new instance of `Lion` with the name "Simba".
 # Type your solution directly below this line:
 Simba = Lion.new("Simba")
+
+binding.pry 
